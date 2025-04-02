@@ -1,0 +1,39 @@
+<doc>
+    <commonInfo>
+        <supplyNumber route="test">100480</supplyNumber>
+        <supplyDate>2025-01-20</supplyDate>
+    </commonInfo>
+    <lots>
+        <lot>
+            <objects>
+                <object>
+                    <name>apples</name>
+                    <price>3.25</price>
+                    <currency>USD</currency>
+                </object>
+                <object>
+                    <name>oranges</name>
+                    <price>3.50</price>
+                    <currency>USD</currency>
+                </object>
+            </objects>
+        </lot>
+        <lot>
+            <object>
+                <name>bananas</name>
+                <price>2.50</price>
+                <currency>EUR</currency>
+            </object>
+            <object>
+                <name>strawberries</name>
+                <price>5.00</price>
+                <currency>USD</currency>
+            </object>
+            <object>
+                <name>grapes</name>
+                <price>3.75</price>
+                <currency>USD</currency>
+            </object>
+        </lot>
+    </lots>
+</doc>

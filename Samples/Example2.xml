@@ -1,0 +1,15 @@
+<doc>
+    <commonInfo>
+        <supplyNumber>100593</supplyNumber>
+        <date>2025-01-21</date>
+    </commonInfo>
+    <lots>
+        <lot>
+            <object>
+                <name>raspberry</name>
+                <price>7.50</price>
+                <currency>USD</currency>
+            </object>
+        </lot>
+    </lots>
+</doc>

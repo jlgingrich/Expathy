@@ -1,0 +1,27 @@
+<doc>
+    <commonInfo>
+        <supplyNumber>100601</supplyNumber>
+        <date>2025-01-22</date>
+    </commonInfo>
+    <lots>
+        <lot>
+            <objects>
+                <obj>
+                    <name>cherries</name>
+                    <price>3.20</price>
+                    <currency>EUR</currency>
+                </obj>
+                <obj>
+                    <name>blueberries</name>
+                    <price>4.50</price>
+                    <currency>USD</currency>
+                </obj>
+                <obj>
+                    <name>peaches</name>
+                    <price>2.80</price>
+                    <currency>USD</currency>
+                </obj>
+            </objects>
+        </lot>
+    </lots>
+</doc>
