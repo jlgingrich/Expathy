@@ -1,6 +1,6 @@
 # Expathy
 
-An F# library that is heavily inspired by [Thoth.Json](https://github.com/thoth-org/Thoth.Json) and aspires to be "Thoth.Json for XML". It has no external dependancies and leans on `System.Xml`'s XPath capabilities.
+An F# library that is heavily inspired by [Thoth.Json](https://github.com/thoth-org/Thoth.Json) and aspires to be "Thoth.Json for XML". It has no external dependencies and leans on `System.Xml`'s XPath capabilities.
 
 ## To-do
 
