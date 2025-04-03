@@ -4,7 +4,9 @@ An F# library that is heavily inspired by [Thoth.Json](https://github.com/thoth-
 
 ## To-do
 
-- [ ] Add path-tracing error messages (**High-Priority**)
+- [x] Add path-tracing error messages
+  - [ ] Allow multiple decoding errors
+- [ ] Add custom validation/mapping like Thoth's `andThen`
 - [ ] Add `Encoding` module
 - [ ] Add DSL for XPath expressions?
 - [ ] Refactor into multiple source files.

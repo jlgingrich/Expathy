@@ -4,7 +4,7 @@ open Expathy
 open System
 
 (*
-    This sample demonstrates a simple mapping from table-like XML to domain types
+    This sample demonstrates error reporting. Uncomment any of the block comments and comment out the correct version to see how Expathy reports the error
 *)
 
 type Book =
@@ -13,9 +13,7 @@ type Book =
         Author: string
         Title: string
         Genre: string
-        Price: float
         PublishDate: DateTime
-        Description: string
     }
 
 Load.fromFile "Books.xml"
@@ -25,12 +23,20 @@ Load.fromFile "Books.xml"
         (Decode.object (fun get ->
             {
                 Id = get.Required.Single "@id" Decode.string
+                // FailedToSelectValue
+                (* Author = get.Required.Single "author" Decode.string *)
                 Author = get.Required.Single "author/text()" Decode.string
+                // FailedToSelectSingle
+                (* Title = get.Required.Single "errornode" Decode.string *)
                 Title = get.Required.Single "title/text()" Decode.string
+                // XPathSyntaxError
+                (* Genre = get.Required.Single "genre/text)" Decode.string *)
                 Genre = get.Required.Single "genre/text()" Decode.string
-                Price = get.Required.Single "price/text()" Decode.float
+                // FormatError
+                (* PublishDate =
+                   get.Required.Single "publish_date/text()" Decode.float |> ignore
+                   DateTime.Now *)
                 PublishDate = get.Required.Single "publish_date/text()" Decode.dateTime
-                Description = get.Required.Single "description/text()" Decode.string
             })))
 |> Decode.assertOk
 |> List.iter (printfn "%A")
