@@ -1,0 +1,10 @@
+{
+    "files.readonlyInclude": {
+        "/home/jlgingrich/programming/Froth.Xml/Thoth.Json.Net/**": true
+    },
+    "files.exclude": {
+        ".gitignore": true,
+        ".vscode": true,
+        ".editorconfig": true
+    }
+}
