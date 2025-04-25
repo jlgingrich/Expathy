@@ -8,8 +8,9 @@ An F# library that is heavily inspired by [Thoth.Json](https://github.com/thoth-
   - [ ] Allow multiple decoding errors
 - [ ] Add custom validation/mapping like Thoth's `andThen`
 - [ ] Add `Encoding` module
-- [ ] Add DSL for XPath expressions?
-- [ ] Refactor into multiple source files.
+- [ ] Expose  `XmlNamespaceManager` config
+- [ ] Add DSL/builder for XPath expressions
+- [ ] Refactor into multiple source files
 
 ## Links
 
